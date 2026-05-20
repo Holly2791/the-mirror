@@ -1,11 +1,11 @@
 {
-  "name": "@workspace/the-mirror",
+  "name": "the-mirror",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 22500",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 22500",
+    "start": "next start",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
