@@ -53,10 +53,15 @@ export async function POST(req: NextRequest) {
       : scores.overallTier === 'stirring' ? 'The Stirring'
       : 'The Rising Warrior'
 
-    Promise.all([
-      sendRespondentEmail({ firstName, email, scores, tierName, responseId }),
-      sendHollyEmail({ firstName, email, scores, tierName, responseId, answers }),
-    ]).catch(err => console.error('Email error:', err))
+    try {
+  const [r1, r2] = await Promise.all([
+    sendRespondentEmail({ firstName, email, scores, tierName, responseId }),
+    sendHollyEmail({ firstName, email, scores, tierName, responseId, answers }),
+  ])
+  console.log('Email results:', JSON.stringify(r1), JSON.stringify(r2))
+} catch (err) {
+  console.error('Email error:', err)
+}
 
     return NextResponse.json({ success: true })
   } catch (e) {
