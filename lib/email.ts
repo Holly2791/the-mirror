@@ -18,7 +18,7 @@ async function sendEmail({ to, toName, subject, html, replyTo }: {
   html: string
   replyTo?: string
 }) {
-  const response = await fetch('https://api.sender.net/v2/emails', {
+ const response = await fetch('https://api.sender.net/v2/message/send', {
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${process.env.SENDER_API_KEY}`,
@@ -30,7 +30,7 @@ async function sendEmail({ to, toName, subject, html, replyTo }: {
         email: process.env.SENDER_FROM_EMAIL,
         name: 'Holly Little | Woman to Warrior'
       },
-      to: [{ email: to, name: toName }],
+      to: { email: to, name: toName },
       subject,
       html,
       ...(replyTo && { reply_to: replyTo })
