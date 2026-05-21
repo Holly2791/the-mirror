@@ -273,7 +273,7 @@ export default function ResultsPage({ data }: Props) {
             <li>Your Results Framework and how you score in the 5 categories</li>
             <li>Your 1st Step Forward — a letter from your future self where she asks something of you</li>
             <li>Your Bonus personal results walk-through video</li>
-            <li>The Bonus 'Unbecoming' video training</li>
+            
           </ol>
         </div>
 
