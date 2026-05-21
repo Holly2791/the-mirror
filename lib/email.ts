@@ -200,6 +200,11 @@ function buildRespondentEmailHTML(data: EmailData): string {
   </div>
 </td></tr>
 
+<!-- Video -->
+<tr><td style="padding:32px 40px;text-align:center;background:#2D5A1B;">
+  <h3 style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:white;">Your Personal Video Walkthrough</h3>
+  <a href="${scores.overallTier === 'dimmed' ? 'https://youtu.be/QyrFYwjHF8E' : scores.overallTier === 'stirring' ? 'https://youtu.be/g8p3Yf8UBXE' : 'https://youtu.be/4b8UwB5Yvhc'}" style="display:inline-block;background:#C9962B;color:white;padding:14px 32px;font-family:Arial,sans-serif;font-size:13px;font-weight:700;letter-spacing:1px;text-decoration:none;border-radius:4px;">Watch Your Video Walkthrough →</a>
+</td></tr>
 <!-- CTA -->
 <tr><td style="background:#C9962B;padding:40px;text-align:center;">
   <h2 style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:22px;color:white;letter-spacing:2px;text-transform:uppercase;">READY FOR MORE?</h2>
