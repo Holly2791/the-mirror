@@ -477,6 +477,34 @@ export default function ResultsPage({ data }: Props) {
         </div>
       </section>
 
+ {/* ─── SECTION 6B: Unbecoming Bonus ─── */}
+      <section style={{ background: '#181410', padding: '80px 24px' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+          <p style={{ margin: '0 0 12px', fontFamily: 'var(--font-montserrat, Montserrat, sans-serif)', fontSize: '11px', letterSpacing: '4px', color: '#C9962B', textTransform: 'uppercase', fontWeight: '700' }}>
+            ★ BONUS TRAINING ★
+          </p>
+          <h2 style={{ margin: '0 0 24px', fontFamily: 'var(--font-cormorant, Georgia, serif)', fontSize: '42px', color: '#FAF7F2', fontWeight: '400', fontStyle: 'italic' }}>
+            The Unbecoming
+          </h2>
+          <p style={{ margin: '0 auto 40px', fontFamily: 'var(--font-cormorant, Georgia, serif)', fontSize: '19px', color: '#E8C87A', maxWidth: '640px', lineHeight: '1.8', fontStyle: 'italic' }}>
+            Seeing yourself clearly is the first step. The Unbecoming is the second.
+          </p>
+          <p style={{ margin: '0 auto 48px', fontFamily: 'var(--font-cormorant, Georgia, serif)', fontSize: '18px', color: '#FAF7F2', maxWidth: '640px', lineHeight: '1.8' }}>
+            This specially created training takes you into the next stage of the journey — the moment the old identity begins to lose its hold. The patterns you inherited. The stories you were handed. The version of yourself you built for survival rather than truth.
+            <br /><br />
+            In 20 minutes you will understand exactly what has been keeping you stuck — not as a concept, but as a felt, lived recognition that creates the opening for everything to shift.
+          </p>
+          <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '4px', background: 'rgba(0,0,0,0.3)' }}>
+            <iframe
+              src="https://www.youtube.com/embed/rWsxl6yELJE"
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
+      
       {/* ─── SECTION 7: CTA ─── */}
       <section style={{ background: '#C9962B', padding: '80px 24px', textAlign: 'center' }}>
         <h2 style={{ margin: '0 0 20px', fontFamily: 'var(--font-montserrat, Montserrat, sans-serif)', fontSize: '30px', fontWeight: '700', color: 'white', letterSpacing: '4px', textTransform: 'uppercase' }}>
