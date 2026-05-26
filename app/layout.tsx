@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'The Mirror — Woman to Warrior',
   description: 'A 37-question assessment to reveal exactly where you are in your journey back to yourself.',
   icons: {
-    icon: '/favicon.png',
+    icon: '/favicon.png.png',
   },
 }
 
